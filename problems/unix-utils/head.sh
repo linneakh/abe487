@@ -10,7 +10,7 @@ fi
 FILE=$1
 HEAD=${2:-3}
 
-if [[ ! -e "$FILE" ]]; then
+if [[ ! -f "$FILE" ]]; then
 	echo "\"$FILE\"" is not a file
 	exit 1
 fi
